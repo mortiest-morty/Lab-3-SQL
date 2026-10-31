@@ -48,7 +48,7 @@ BEGIN
     RETURN v_cur;
 END;
 $$;
-/*
+
 -- ---------- 4-5. spec/id → 2 ----------
 SELECT next_id('spec','id') AS step4_result;       
 SELECT * FROM spec ORDER BY id;                     
@@ -178,4 +178,4 @@ DROP FUNCTION IF EXISTS next_id(TEXT,TEXT) CASCADE;
 DROP FUNCTION IF EXISTS trg_sync_spec() CASCADE;
 DROP TABLE IF EXISTS mushrooms2 CASCADE;
 DROP TABLE IF EXISTS mushrooms  CASCADE;
-DROP TABLE IF EXISTS spec        CASCADE;*/
+DROP TABLE IF EXISTS spec        CASCADE;
